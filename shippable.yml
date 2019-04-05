@@ -1,4 +1,10 @@
 ---
+language: node_js
+
+branches:
+  only:
+    - master
+
 build:
   ci:
     - docker build -t lowbit/meetup-assembly-lines:$BRANCH.BUILD_NUMBER .

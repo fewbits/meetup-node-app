@@ -6,6 +6,7 @@ branches:
 
 build:
   ci:
+    - npm install --prefix app/
     - npm test --prefix app/
     - docker build -t lowbit/meetup-assembly-lines:$BRANCH.$BUILD_NUMBER .
   post_ci:
